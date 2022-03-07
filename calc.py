@@ -13,8 +13,11 @@ calc.geometry("300x300")
 
 # 엔터키 연결
 def func(event):                    # func 함수 작성
-    # 입력창의 값 가져오기 
-    print(tk.Entry.get(display))    # 입력창에 들어 있는 값을 출력해줍니다.
+    # 계산하기
+    result = eval(tk.Entry.get(display))  # eval() 함수로 계산
+    print(result)
+    """# 입력창의 값 가져오기 
+    print(tk.Entry.get(display))    # 입력창에 들어 있는 값을 출력해줍니다."""
 
 
 
