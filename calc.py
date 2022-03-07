@@ -13,7 +13,9 @@ calc.geometry("300x300")
 
 # 엔터키 연결
 def func(event):                    # func 함수 작성
-    print('enter pressed')          # 일단 임시로 문자열 출력
+    # 입력창의 값 가져오기 
+    print(tk.Entry.get(display))    # 입력창에 들어 있는 값을 출력해줍니다.
+
 
 
 # 출력창 추가 
