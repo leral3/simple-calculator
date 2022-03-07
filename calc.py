@@ -1,5 +1,6 @@
 # 파이썬의 tkinter 모듈을 이용하여 간단한 계산기를 만들어보기 
 
+from dis import dis
 import tkinter as tk
 
 
@@ -16,6 +17,8 @@ def func(event):                    # func 함수 작성
     # 계산하기
     result = eval(tk.Entry.get(display))  # eval() 함수로 계산
     print(result)
+    display.delete(0, tk.END)       # 0번째 자리부터 끝까지 삭제하는 명령어 / 내용 삭제 의미
+    display.insert(0, result)       # 0번째 자리에 result라는 변수값을 입력하는 명령어 
     """# 입력창의 값 가져오기 
     print(tk.Entry.get(display))    # 입력창에 들어 있는 값을 출력해줍니다."""
 
